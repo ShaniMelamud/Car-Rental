@@ -1,0 +1,18 @@
+<p>Add Car Type</p><br>
+<form ngNativeValidate (submit)='AddCarType()'>
+
+    <input type='text' name='manufacturer' [(ngModel)]='newCarType.manufacturer' placeholder="Manufacturer..."><br><br>
+    <input type='text' name='model' [(ngModel)]='newCarType.model' placeholder="Model..."><br><br>
+    <input type='text' name='pricePerDay' [(ngModel)]='newCarType.pricePerDay' placeholder="Price per day..."><br><br>
+
+    <input #imageBox type="file" accept="image/jpeg" (change)="displayPreview($event.target.files[0])">
+
+    <button class='imageButton' type='button' (click)='imageBox.click()'>Image...</button><br><br>
+
+<ng-container *ngIf='preview'>
+    <img src="{{preview}}"><br><br>
+</ng-container>
+
+<button type="submit">Add</button>
+
+</form>

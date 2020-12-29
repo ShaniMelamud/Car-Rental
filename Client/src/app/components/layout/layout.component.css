@@ -2,22 +2,35 @@ div{
     height: 100%;
     box-sizing: border-box;
     display: grid;
-    grid-template-rows: 15% 80% 5%;
+    grid-template-rows: 10% 80% 10%;
     grid-template-columns: repeat(12, 1fr);
 }
 
-div, div > * {
-     border: 1px solid black;
-} 
+
 
 header, footer{
     grid-column: span 12;
+    background-color: lightskyblue;
+
+}
+footer{
+    
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    position: fixed; bottom: 0 
 }
 
 aside{
     grid-column: span 2;
+    background-color: darkseagreen;
+
 }
 
 main{
+    background-color: darkseagreen;
     grid-column: span 10;
+    overflow: auto;
 }
+

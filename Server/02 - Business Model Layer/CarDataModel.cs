@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CarRental
 {
@@ -8,13 +6,13 @@ namespace CarRental
     {
         public int ID { get; set; }
         public int CarTypeId { get; set; }
-        public int Kilometer { get; set; }
-        public DateTime CreateAt { get; set; }
+        public int? Kilometer { get; set; }
+        public DateTime? CreateAt { get; set; }
         public string Gear { get; set; }
-        public string IsOk { get; set; }
         public string Notes { get; set; }
         public string Image { get; set; }
         public int? BranchId { get; set; }
+        public virtual CarTypeModel CarType { get; set; }
 
         public CarDataModel() { }
         public CarDataModel(CarData carData)
@@ -24,7 +22,6 @@ namespace CarRental
             Kilometer = carData.Kilometer;
             CreateAt = carData.CreateAt;
             Gear = carData.Gear;
-            IsOk = carData.IsOk;
             Notes = carData.Notes;
             Image = carData.Image;
             BranchId = carData.BranchId;
@@ -38,7 +35,6 @@ namespace CarRental
                 Kilometer = Kilometer,
                 CreateAt = CreateAt,
                 Gear = Gear,
-                IsOk = IsOk,
                 Notes = Notes,
                 Image = Image,
                 BranchId = BranchId

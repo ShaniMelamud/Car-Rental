@@ -1,1 +1,91 @@
-<p>cars works!</p>
+<p>Please insert dates for getting available cars.</p>
+
+<ng-template #content let-modal class="dialog">
+    <div class="modal-header">
+        <h4 class="modal-title">Choose Locations</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <p>Pick up at&hellip;</p>
+
+        <div class="btn-group btn-group-toggle" ngbRadioGroup name="radioBasic" name='branchStartId'
+            [(ngModel)]="newRental.branchStartId">
+            <label ngbButtonLabel class="btn-primary">
+                <input ngbButton type="radio" [value]=1> Tel Aviv
+            </label>
+            <label ngbButtonLabel class="btn-primary">
+                <input ngbButton type="radio" [value]=2> Haifa
+            </label>
+            <label ngbButtonLabel class="btn-primary">
+                <input ngbButton type="radio" [value]=3> Jerusalem
+            </label>
+        </div>
+        <hr>
+        <pre>{{newRental.branchStartId}}</pre>
+        <p>Return at&hellip;</p>
+        <div class="btn-group btn-group-toggle" ngbRadioGroup name="radioBasic" name='branchEndId'
+            [(ngModel)]="newRental.branchEndId">
+            <label ngbButtonLabel class="btn-primary">
+                <input ngbButton type="radio" [value]=1> Tel Aviv
+            </label>
+            <label ngbButtonLabel class="btn-primary">
+                <input ngbButton type="radio" [value]=2> Haifa
+            </label>
+            <label ngbButtonLabel class="btn-primary">
+                <input ngbButton type="radio" [value]=3> Jerusalem
+            </label>
+        </div>
+        <hr>
+        <pre>{{newRental.branchEndId}}</pre>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-light" (click)="AddRental()">Order</button>
+        <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+    </div>
+
+
+</ng-template>
+
+
+<label>Pick up</label><br>
+<input min="{{todaysdate|date:'yyyy-MM-dd'}}" max="{{dateSent|date:'yyyy-MM-dd'}}" #myDate class="start-date"
+    type="date" (change)="setStartDate($event)" /><br><br>
+<label>Return</label><br>
+<input min="{{todaysdate|date:'yyyy-MM-dd'}}" max="{{dateSent|date:'yyyy-MM-dd'}}" #myDate1 class="end-date" type="date"
+    (change)="setEndDate($event)" /><br><br>
+
+<button mat-button (click)="getActivityCarsData()">Check Activity</button><br><br>
+<input name="changeStr" [(ngModel)]="changeStr" (ngModelChange)="search()" placeholder="חיפוש..." type="text" />
+<br>
+
+<div class="div-card" *ngFor="let c of activityCarsDatatoShow">
+    <mat-card class="example-card">
+        <mat-card-header>
+            <mat-card-title>{{c.carType.manufacturer}}</mat-card-title>
+            <mat-card-subtitle>{{c.carType.model}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image [src]="c.carType.imageFileName" alt="{{c.carType.imageFileName}}">
+        <mat-card-content>
+            <p>
+                Gear: {{c.gear}}
+                <hr>
+                Price Per Day
+                <br>
+                {{c.carType.pricePerDay}}
+                <hr>
+                Total price
+            <p (change)="SetPricePerDate($event)"> {{calculatePriceWithDays(c.carType.pricePerDay)|number}} </p>
+            <hr> {{startDate}} - {{endDate}}
+            <hr>
+
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button *ngIf="user" (click)="SetCarDataId(c.id)" (click)="getSingleCarTypeByID(c.carType.id)"
+                (click)="openLg(content)">Invite Car</button>
+
+        </mat-card-actions>
+    </mat-card>
+</div>

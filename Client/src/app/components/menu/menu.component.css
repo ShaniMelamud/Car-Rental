@@ -1,8 +1,16 @@
 a{
     display: block;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .active{
     color: magenta;
     font-weight: bold;
+}
+.greetings{
+    position: relative;
+    bottom: 50px;
+
+}
+div{
+    width: 250px;
 }

@@ -1,9 +1,18 @@
-<nav>
-<a routerLink="/home" routerLinkActive="active">Home</a>
-<a routerLink="/cars" routerLinkActive="active">Cars</a>
-<a routerLink="/login" routerLinkActive="active">Login</a>
-<a routerLink="/sign-up" routerLinkActive="active">Sign up</a>
-<a routerLink="/logout" routerLinkActive="active">Logout</a>
-<a routerLink="/about" routerLinkActive="active">About</a>
-<a routerLink="/contact-us" routerLinkActive="active">Contact us</a>
+<div>
+    <span class="greetings">
+        {{greetings}}
+    </span>
+</div>
+    <nav>
+    <a routerLink="/home" routerLinkActive="active">Home</a>
+    <a routerLink="/cars" routerLinkActive="active" >Cars</a>
+    <a routerLink="/rentals" routerLinkActive="active" *ngIf="user">Rentals</a>
+    <a routerLink="/branches" routerLinkActive="active" *ngIf="user">Branches</a>
+    <a routerLink="/login" routerLinkActive="active" *ngIf="!user">Login</a>
+    <a routerLink="/sign-up" routerLinkActive="active" *ngIf="!user">Sign up</a>
+    <a routerLink="/admin/back-office" routerLinkActive="active" *ngIf="user?.role=='Admin' || user?.role=='Employee'">Admin</a>
+    <a routerLink="/about" routerLinkActive="active" >About</a>
+    <a routerLink="/contact-us" routerLinkActive="active">Contact us</a>
+    <a routerLink="/logout" routerLinkActive="active" *ngIf="user">Logout</a>
+    <a routerLink="/profile" routerLinkActive="active" *ngIf="user">Profile</a>
 </nav>

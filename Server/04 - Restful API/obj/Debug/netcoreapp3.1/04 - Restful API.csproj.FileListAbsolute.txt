@@ -1,0 +1,71 @@
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\obj\Debug\netcoreapp3.1\04 - Restful API.csprojAssemblyReference.cache
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\obj\Debug\netcoreapp3.1\04 - Restful API.AssemblyInfoInputs.cache
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\obj\Debug\netcoreapp3.1\04 - Restful API.AssemblyInfo.cs
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\04 - Restful API.exe
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\04 - Restful API.deps.json
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\04 - Restful API.runtimeconfig.json
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\04 - Restful API.runtimeconfig.dev.json
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\04 - Restful API.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\04 - Restful API.pdb
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\01 - Data Access Layer.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\02 - Business Model Layer.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\03 - Business Logic Layer.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\03 - Business Logic Layer.pdb
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\01 - Data Access Layer.pdb
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\02 - Business Model Layer.pdb
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\obj\Debug\netcoreapp3.1\04 - Restful API.RazorTargetAssemblyInfo.cache
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\obj\Debug\netcoreapp3.1\04 - Restful API.csproj.CopyComplete
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\obj\Debug\netcoreapp3.1\staticwebassets\04 - Restful API.StaticWebAssets.Manifest.cache
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\obj\Debug\netcoreapp3.1\staticwebassets\04 - Restful API.StaticWebAssets.xml
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\obj\Debug\netcoreapp3.1\04 - Restful API.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\obj\Debug\netcoreapp3.1\04 - Restful API.pdb
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\obj\Debug\netcoreapp3.1\04 - Restful API.genruntimeconfig.cache
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\obj\Debug\netcoreapp3.1\04 - Restful API.csproj.CoreCompileInputs.cache
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\obj\Debug\netcoreapp3.1\04 - Restful API.MvcApplicationPartsAssemblyInfo.cache
+C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API\bin\Debug\netcoreapp3.1\BCrypt.Net-Next.dll

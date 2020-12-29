@@ -1,0 +1,866 @@
+19/12/2020 17:26:54  Information  Application started. Press Ctrl+C to shut down.  
+19/12/2020 17:26:54  Information  Hosting environment: Development  
+19/12/2020 17:26:54  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+19/12/2020 17:26:55  Information  Sending all Cars Types back to user. CarsTypes count: 2  
+19/12/2020 17:58:56  Information  Application started. Press Ctrl+C to shut down.  
+19/12/2020 17:58:56  Information  Hosting environment: Development  
+19/12/2020 17:58:56  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+19/12/2020 18:04:23  Information  Application started. Press Ctrl+C to shut down.  
+19/12/2020 18:04:23  Information  Hosting environment: Development  
+19/12/2020 18:04:23  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+19/12/2020 18:05:22  Error  An unhandled exception has occurred while executing the request.  Object reference not set to an instance of an object.
+19/12/2020 18:06:13  Error  An unhandled exception has occurred while executing the request.  Object reference not set to an instance of an object.
+19/12/2020 18:06:29  Information  Application started. Press Ctrl+C to shut down.  
+19/12/2020 18:06:29  Information  Hosting environment: Development  
+19/12/2020 18:06:29  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+19/12/2020 18:08:30  Error  An unhandled exception has occurred while executing the request.  Object reference not set to an instance of an object.
+19/12/2020 18:11:07  Information  Application started. Press Ctrl+C to shut down.  
+19/12/2020 18:11:08  Information  Hosting environment: Development  
+19/12/2020 18:11:08  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+19/12/2020 18:42:32  Information  Application started. Press Ctrl+C to shut down.  
+19/12/2020 18:42:32  Information  Hosting environment: Development  
+19/12/2020 18:42:32  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+19/12/2020 18:43:09  Error  An unhandled exception has occurred while executing the request.  Object reference not set to an instance of an object.
+19/12/2020 18:43:33  Information  Application started. Press Ctrl+C to shut down.  
+19/12/2020 18:43:33  Information  Hosting environment: Development  
+19/12/2020 18:43:33  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+19/12/2020 18:48:15  Information  Application started. Press Ctrl+C to shut down.  
+19/12/2020 18:48:15  Information  Hosting environment: Development  
+19/12/2020 18:48:15  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+19/12/2020 18:48:18  Error  An unhandled exception has occurred while executing the request.  Object reference not set to an instance of an object.
+19/12/2020 18:48:25  Error  An unhandled exception has occurred while executing the request.  Object reference not set to an instance of an object.
+19/12/2020 18:48:29  Error  An unhandled exception has occurred while executing the request.  Object reference not set to an instance of an object.
+19/12/2020 18:49:38  Error  An unhandled exception has occurred while executing the request.  Object reference not set to an instance of an object.
+19/12/2020 18:49:42  Information  Application started. Press Ctrl+C to shut down.  
+19/12/2020 18:49:42  Information  Hosting environment: Development  
+19/12/2020 18:49:42  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+19/12/2020 19:21:11  Information  Application started. Press Ctrl+C to shut down.  
+19/12/2020 19:21:11  Information  Hosting environment: Development  
+19/12/2020 19:21:11  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+19/12/2020 19:21:47  Error  Failed executing DbCommand (147ms) [Parameters=[@p0='?' (DbType = Date), @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 50), @p7='?' (Size = 50), @p8='?' (Size = 50), @p9='?' (Size = 4000), @p10='?' (Size = 50), @p11='?' (DbType = Date), @p12='?' (Size = 50), @p13='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([BirthDate], [Email], [FirstName], [Gender], [IdCard], [Image], [LastName], [LicenseNumber], [LicenseType], [Password], [Phone], [RegisterDate], [Role], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13);
+SELECT [UserID]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [UserID] = scope_identity();  
+19/12/2020 19:21:47  Error  An exception occurred in the database while saving changes for context type 'CarRental.CarRentalContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'CarRental.dbo.Users', column 'Password'. Truncated value: '$2a$11$ECvWUSgfWa4XJYAZmkYcp.pWE7URqbrWxP2d713pX5Z'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:ae68cfb8-81ce-46ec-b0d4-b485a81e2216
+Error Number:2628,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)  An error occurred while updating the entries. See the inner exception for details.
+19/12/2020 19:21:47  Error  An unhandled exception has occurred while executing the request.  An error occurred while updating the entries. See the inner exception for details.
+19/12/2020 19:22:06  Error  Failed executing DbCommand (1ms) [Parameters=[@p0='?' (DbType = Date), @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 50), @p7='?' (Size = 50), @p8='?' (Size = 50), @p9='?' (Size = 4000), @p10='?' (Size = 50), @p11='?' (DbType = Date), @p12='?' (Size = 50), @p13='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([BirthDate], [Email], [FirstName], [Gender], [IdCard], [Image], [LastName], [LicenseNumber], [LicenseType], [Password], [Phone], [RegisterDate], [Role], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13);
+SELECT [UserID]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [UserID] = scope_identity();  
+19/12/2020 19:22:06  Error  An exception occurred in the database while saving changes for context type 'CarRental.CarRentalContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'CarRental.dbo.Users', column 'Password'. Truncated value: '$2a$11$YlgLcOttXk3Du/uG2hZB9ecmwSf29gMVlMn9ldTcrWp'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:ae68cfb8-81ce-46ec-b0d4-b485a81e2216
+Error Number:2628,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)  An error occurred while updating the entries. See the inner exception for details.
+19/12/2020 19:22:06  Error  An unhandled exception has occurred while executing the request.  An error occurred while updating the entries. See the inner exception for details.
+19/12/2020 19:22:11  Information  Application started. Press Ctrl+C to shut down.  
+19/12/2020 19:22:11  Information  Hosting environment: Development  
+19/12/2020 19:22:11  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+19/12/2020 19:22:43  Error  Failed executing DbCommand (6ms) [Parameters=[@p0='?' (DbType = Date), @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 50), @p7='?' (Size = 50), @p8='?' (Size = 50), @p9='?' (Size = 4000), @p10='?' (Size = 50), @p11='?' (DbType = Date), @p12='?' (Size = 50), @p13='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([BirthDate], [Email], [FirstName], [Gender], [IdCard], [Image], [LastName], [LicenseNumber], [LicenseType], [Password], [Phone], [RegisterDate], [Role], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13);
+SELECT [UserID]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [UserID] = scope_identity();  
+19/12/2020 19:22:43  Error  An exception occurred in the database while saving changes for context type 'CarRental.CarRentalContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'CarRental.dbo.Users', column 'Password'. Truncated value: '$2a$11$li2dWfYqDWbNjtXoFnCqTOcgmKHLsKTZjNdJmjV0ixL'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:6a1b6e3b-2703-4549-83ce-c7e3ce2bd18d
+Error Number:2628,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)  An error occurred while updating the entries. See the inner exception for details.
+19/12/2020 19:23:43  Information  Application started. Press Ctrl+C to shut down.  
+19/12/2020 19:23:43  Information  Hosting environment: Development  
+19/12/2020 19:23:43  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+19/12/2020 19:23:47  Error  Failed executing DbCommand (4ms) [Parameters=[@p0='?' (DbType = Date), @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 50), @p7='?' (Size = 50), @p8='?' (Size = 50), @p9='?' (Size = 200), @p10='?' (Size = 50), @p11='?' (DbType = Date), @p12='?' (Size = 50), @p13='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([BirthDate], [Email], [FirstName], [Gender], [IdCard], [Image], [LastName], [LicenseNumber], [LicenseType], [Password], [Phone], [RegisterDate], [Role], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13);
+SELECT [UserID]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [UserID] = scope_identity();  
+19/12/2020 19:23:47  Error  An exception occurred in the database while saving changes for context type 'CarRental.CarRentalContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'CarRental.dbo.Users', column 'Password'. Truncated value: '$2a$11$DdSv0W9D.rZz6EKJYqQTHepfLJgi3SHxDECc4acLwnv'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:0ec85fdc-5a8a-471d-884b-3ab4cc4bf83c
+Error Number:2628,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)  An error occurred while updating the entries. See the inner exception for details.
+19/12/2020 19:23:47  Error  An unhandled exception has occurred while executing the request.  An error occurred while updating the entries. See the inner exception for details.
+19/12/2020 19:23:57  Information  Application started. Press Ctrl+C to shut down.  
+19/12/2020 19:23:57  Information  Hosting environment: Development  
+19/12/2020 19:23:57  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+19/12/2020 19:24:13  Information  Application started. Press Ctrl+C to shut down.  
+19/12/2020 19:24:13  Information  Hosting environment: Development  
+19/12/2020 19:24:13  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+19/12/2020 19:24:46  Error  An unhandled exception has occurred while executing the request.  Object reference not set to an instance of an object.
+19/12/2020 19:25:07  Information  Application started. Press Ctrl+C to shut down.  
+19/12/2020 19:25:07  Information  Hosting environment: Development  
+19/12/2020 19:25:07  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+19/12/2020 19:27:16  Error  An unhandled exception has occurred while executing the request.  Object reference not set to an instance of an object.
+19/12/2020 19:29:29  Information  Application started. Press Ctrl+C to shut down.  
+19/12/2020 19:29:29  Information  Hosting environment: Development  
+19/12/2020 19:29:29  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+19/12/2020 19:29:36  Error  An unhandled exception has occurred while executing the request.  Object reference not set to an instance of an object.
+19/12/2020 19:29:38  Error  An unhandled exception has occurred while executing the request.  Object reference not set to an instance of an object.
+19/12/2020 19:29:46  Information  Application started. Press Ctrl+C to shut down.  
+19/12/2020 19:29:46  Information  Hosting environment: Development  
+19/12/2020 19:29:46  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+19/12/2020 19:33:59  Information  Application started. Press Ctrl+C to shut down.  
+19/12/2020 19:33:59  Information  Hosting environment: Development  
+19/12/2020 19:33:59  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+19/12/2020 19:34:03  Error  An unhandled exception has occurred while executing the request.  Object reference not set to an instance of an object.
+19/12/2020 19:36:24  Error  An unhandled exception has occurred while executing the request.  Object reference not set to an instance of an object.
+19/12/2020 19:36:43  Information  Application started. Press Ctrl+C to shut down.  
+19/12/2020 19:36:44  Information  Hosting environment: Development  
+19/12/2020 19:36:44  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+19/12/2020 19:39:55  Information  Application started. Press Ctrl+C to shut down.  
+19/12/2020 19:39:55  Information  Hosting environment: Development  
+19/12/2020 19:39:55  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+19/12/2020 19:40:29  Error  An unhandled exception has occurred while executing the request.  Invalid salt version
+19/12/2020 19:40:44  Information  Application started. Press Ctrl+C to shut down.  
+19/12/2020 19:40:44  Information  Hosting environment: Development  
+19/12/2020 19:40:44  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+19/12/2020 19:42:53  Information  Application started. Press Ctrl+C to shut down.  
+19/12/2020 19:42:53  Information  Hosting environment: Development  
+19/12/2020 19:42:53  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+19/12/2020 19:43:17  Error  An unhandled exception has occurred while executing the request.  Object reference not set to an instance of an object.
+20/12/2020 0:34:14  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 0:34:14  Information  Hosting environment: Development  
+20/12/2020 0:34:14  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 0:35:15  Error  An unhandled exception has occurred while executing the request.  Object reference not set to an instance of an object.
+20/12/2020 0:36:55  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 0:36:55  Information  Hosting environment: Development  
+20/12/2020 0:36:55  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 0:37:22  Error  An unhandled exception has occurred while executing the request.  Invalid salt version
+20/12/2020 0:37:40  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 0:37:40  Information  Hosting environment: Development  
+20/12/2020 0:37:40  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 0:38:06  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 0:38:06  Information  Hosting environment: Development  
+20/12/2020 0:38:06  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 0:41:11  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 0:41:11  Information  Hosting environment: Development  
+20/12/2020 0:41:11  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 0:41:18  Error  An unhandled exception has occurred while executing the request.  The work factor must be between 4 and 31 (inclusive) (Parameter 'workFactor')
+Actual value was 100.
+20/12/2020 0:41:38  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 0:41:38  Information  Hosting environment: Development  
+20/12/2020 0:41:38  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 0:42:25  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 0:42:25  Information  Hosting environment: Development  
+20/12/2020 0:42:25  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 0:42:26  Error  An unhandled exception has occurred while executing the request.  The work factor must be between 4 and 31 (inclusive) (Parameter 'workFactor')
+Actual value was 508652664.
+20/12/2020 0:42:28  Error  An unhandled exception has occurred while executing the request.  The work factor must be between 4 and 31 (inclusive) (Parameter 'workFactor')
+Actual value was 508652664.
+20/12/2020 0:42:33  Error  An unhandled exception has occurred while executing the request.  The work factor must be between 4 and 31 (inclusive) (Parameter 'workFactor')
+Actual value was 508652664.
+20/12/2020 0:42:42  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 0:42:42  Information  Hosting environment: Development  
+20/12/2020 0:42:42  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 11:04:59  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 11:04:59  Information  Hosting environment: Development  
+20/12/2020 11:04:59  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 13:17:33  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 13:17:33  Information  Hosting environment: Development  
+20/12/2020 13:17:33  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 14:18:24  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 14:18:24  Information  Hosting environment: Development  
+20/12/2020 14:18:24  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 14:29:23  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 14:29:23  Information  Hosting environment: Development  
+20/12/2020 14:29:23  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 14:33:38  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 14:33:38  Information  Hosting environment: Development  
+20/12/2020 14:33:39  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 14:36:09  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 14:36:09  Information  Hosting environment: Development  
+20/12/2020 14:36:09  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 14:58:21  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 14:58:21  Information  Hosting environment: Development  
+20/12/2020 14:58:21  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 15:02:11  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 15:02:11  Information  Hosting environment: Development  
+20/12/2020 15:02:11  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 16:03:28  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 16:03:28  Information  Hosting environment: Development  
+20/12/2020 16:03:28  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 16:06:02  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 16:06:02  Information  Hosting environment: Development  
+20/12/2020 16:06:02  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 16:09:51  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 16:09:51  Information  Hosting environment: Development  
+20/12/2020 16:09:51  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 16:13:12  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 16:13:12  Information  Hosting environment: Development  
+20/12/2020 16:13:12  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 16:14:02  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 16:14:02  Information  Hosting environment: Development  
+20/12/2020 16:14:02  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 16:48:10  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 16:48:10  Information  Hosting environment: Development  
+20/12/2020 16:48:10  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 16:59:53  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 16:59:53  Information  Hosting environment: Development  
+20/12/2020 16:59:53  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 17:02:43  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 17:02:43  Information  Hosting environment: Development  
+20/12/2020 17:02:43  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 17:23:12  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 17:23:12  Information  Hosting environment: Development  
+20/12/2020 17:23:12  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 17:31:34  Critical  Application startup exception  The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the CORS policy by listing individual origins if credentials needs to be supported.
+20/12/2020 17:32:15  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 17:32:15  Information  Hosting environment: Development  
+20/12/2020 17:32:15  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 17:43:20  Critical  Application startup exception  Unable to find the required services. Please add all the required services by calling 'IServiceCollection.AddAuthorization' inside the call to 'ConfigureServices(...)' in the application startup code.
+20/12/2020 17:44:11  Critical  Application startup exception  Unable to find the required services. Please add all the required services by calling 'IServiceCollection.AddAuthorization' inside the call to 'ConfigureServices(...)' in the application startup code.
+20/12/2020 17:44:20  Critical  Application startup exception  Unable to find the required services. Please add all the required services by calling 'IServiceCollection.AddAuthorization' inside the call to 'ConfigureServices(...)' in the application startup code.
+20/12/2020 17:44:37  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 17:44:37  Information  Hosting environment: Development  
+20/12/2020 17:44:37  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 17:45:34  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 17:45:34  Information  Hosting environment: Development  
+20/12/2020 17:45:34  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 17:46:51  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 17:46:51  Information  Hosting environment: Development  
+20/12/2020 17:46:51  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 17:47:38  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 17:47:38  Information  Hosting environment: Development  
+20/12/2020 17:47:38  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 17:54:37  Error  Failed executing DbCommand (225ms) [Parameters=[@p6='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Date), @p3='?' (Size = 50), @p4='?' (DbType = Int32), @p5='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [CarData] SET [BranchID] = @p0, [CarTypeID] = @p1, [CreateAt] = @p2, [Gear] = @p3, [Kilometer] = @p4, [Notes] = @p5
+WHERE [CarDataID] = @p6;
+SELECT @@ROWCOUNT;  
+20/12/2020 17:54:37  Error  An exception occurred in the database while saving changes for context type 'CarRental.CarRentalContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_CarData_CarType". The conflict occurred in database "CarRental", table "dbo.CarType", column 'CarTypeID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:b3494959-9037-4ada-bfcc-a36367e439bc
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)  An error occurred while updating the entries. See the inner exception for details.
+20/12/2020 17:56:37  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 17:56:37  Information  Hosting environment: Development  
+20/12/2020 17:56:37  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 17:59:35  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 17:59:35  Information  Hosting environment: Development  
+20/12/2020 17:59:35  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 17:59:54  Error  Failed executing DbCommand (4ms) [Parameters=[@p6='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Date), @p3='?' (Size = 50), @p4='?' (DbType = Int32), @p5='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [CarData] SET [BranchID] = @p0, [CarTypeID] = @p1, [CreateAt] = @p2, [Gear] = @p3, [Kilometer] = @p4, [Notes] = @p5
+WHERE [CarDataID] = @p6;
+SELECT @@ROWCOUNT;  
+20/12/2020 17:59:54  Error  An exception occurred in the database while saving changes for context type 'CarRental.CarRentalContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_CarData_CarType". The conflict occurred in database "CarRental", table "dbo.CarType", column 'CarTypeID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:6177585b-ee29-4440-9b6f-19aa610ba6a6
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)  An error occurred while updating the entries. See the inner exception for details.
+20/12/2020 18:00:16  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 18:00:16  Information  Hosting environment: Development  
+20/12/2020 18:00:17  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 18:02:36  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 18:02:36  Information  Hosting environment: Development  
+20/12/2020 18:02:36  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 18:03:07  Error  Failed executing DbCommand (5ms) [Parameters=[@p6='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Date), @p3='?' (Size = 50), @p4='?' (DbType = Int32), @p5='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [CarData] SET [BranchID] = @p0, [CarTypeID] = @p1, [CreateAt] = @p2, [Gear] = @p3, [Kilometer] = @p4, [Notes] = @p5
+WHERE [CarDataID] = @p6;
+SELECT @@ROWCOUNT;  
+20/12/2020 18:03:07  Error  An exception occurred in the database while saving changes for context type 'CarRental.CarRentalContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_CarData_CarType". The conflict occurred in database "CarRental", table "dbo.CarType", column 'CarTypeID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:80fc259f-b172-46e3-8ac2-51eba80db73e
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)  An error occurred while updating the entries. See the inner exception for details.
+20/12/2020 18:04:45  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 18:04:45  Information  Hosting environment: Development  
+20/12/2020 18:04:45  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 18:05:02  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 18:05:02  Information  Hosting environment: Development  
+20/12/2020 18:05:02  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 18:06:17  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 18:06:17  Information  Hosting environment: Development  
+20/12/2020 18:06:17  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 18:06:33  Error  Failed executing DbCommand (8ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [CarData] SET [CarTypeID] = @p0
+WHERE [CarDataID] = @p1;
+SELECT @@ROWCOUNT;  
+20/12/2020 18:06:33  Error  An exception occurred in the database while saving changes for context type 'CarRental.CarRentalContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_CarData_CarType". The conflict occurred in database "CarRental", table "dbo.CarType", column 'CarTypeID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:0b29d467-e725-453e-b5b2-e24c10c5e4f3
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)  An error occurred while updating the entries. See the inner exception for details.
+20/12/2020 18:09:21  Error  Failed executing DbCommand (4ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [CarData] SET [CarTypeID] = @p0
+WHERE [CarDataID] = @p1;
+SELECT @@ROWCOUNT;  
+20/12/2020 18:09:21  Error  An exception occurred in the database while saving changes for context type 'CarRental.CarRentalContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_CarData_CarType". The conflict occurred in database "CarRental", table "dbo.CarType", column 'CarTypeID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:0df26d6d-baec-4d0e-ad6e-4396c8d428b3
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)  An error occurred while updating the entries. See the inner exception for details.
+20/12/2020 18:10:54  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 18:10:54  Information  Hosting environment: Development  
+20/12/2020 18:10:54  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 18:15:06  Error  Failed executing DbCommand (7ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [CarData] SET [CarTypeID] = @p0
+WHERE [CarDataID] = @p1;
+SELECT @@ROWCOUNT;  
+20/12/2020 18:15:06  Error  An exception occurred in the database while saving changes for context type 'CarRental.CarRentalContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_CarData_CarType". The conflict occurred in database "CarRental", table "dbo.CarType", column 'CarTypeID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:3f5c1e0a-99c2-4331-9d9e-b1939ed10bf2
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)  An error occurred while updating the entries. See the inner exception for details.
+20/12/2020 18:16:06  Information  Application started. Press Ctrl+C to shut down.  
+20/12/2020 18:16:06  Information  Hosting environment: Development  
+20/12/2020 18:16:06  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+20/12/2020 18:16:24  Error  Failed executing DbCommand (3ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [CarData] SET [CarTypeID] = @p0
+WHERE [CarDataID] = @p1;
+SELECT @@ROWCOUNT;  
+20/12/2020 18:16:24  Error  An exception occurred in the database while saving changes for context type 'CarRental.CarRentalContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_CarData_CarType". The conflict occurred in database "CarRental", table "dbo.CarType", column 'CarTypeID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:a067ffcd-1691-44c8-b4ad-3d4be6122143
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)  An error occurred while updating the entries. See the inner exception for details.
+21/12/2020 11:46:17  Error  Failed executing DbCommand (91ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [CarData] SET [CarTypeID] = @p0
+WHERE [CarDataID] = @p1;
+SELECT @@ROWCOUNT;  
+21/12/2020 11:46:17  Error  An exception occurred in the database while saving changes for context type 'CarRental.CarRentalContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_CarData_CarType". The conflict occurred in database "CarRental", table "dbo.CarType", column 'CarTypeID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:98f4e5e7-9cfd-4f0b-a7ff-aaf218ca7952
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)  An error occurred while updating the entries. See the inner exception for details.
+21/12/2020 11:51:14  Error  Failed executing DbCommand (2ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [CarData] SET [CarTypeID] = @p0
+WHERE [CarDataID] = @p1;
+SELECT @@ROWCOUNT;  
+21/12/2020 11:51:14  Error  An exception occurred in the database while saving changes for context type 'CarRental.CarRentalContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_CarData_CarType". The conflict occurred in database "CarRental", table "dbo.CarType", column 'CarTypeID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:bbb5e8c8-8d71-423e-9834-d289c895cad4
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)  An error occurred while updating the entries. See the inner exception for details.
+21/12/2020 11:52:38  Error  Failed executing DbCommand (2ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [CarData] SET [CarTypeID] = @p0
+WHERE [CarDataID] = @p1;
+SELECT @@ROWCOUNT;  
+21/12/2020 11:52:38  Error  An exception occurred in the database while saving changes for context type 'CarRental.CarRentalContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_CarData_CarType". The conflict occurred in database "CarRental", table "dbo.CarType", column 'CarTypeID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:bbb5e8c8-8d71-423e-9834-d289c895cad4
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)  An error occurred while updating the entries. See the inner exception for details.
+21/12/2020 11:54:31  Information  Application started. Press Ctrl+C to shut down.  
+21/12/2020 11:54:31  Information  Hosting environment: Development  
+21/12/2020 11:54:31  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+21/12/2020 11:56:36  Information  Application started. Press Ctrl+C to shut down.  
+21/12/2020 11:56:36  Information  Hosting environment: Development  
+21/12/2020 11:56:36  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+21/12/2020 11:58:56  Information  Application started. Press Ctrl+C to shut down.  
+21/12/2020 11:58:56  Information  Hosting environment: Development  
+21/12/2020 11:58:56  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+21/12/2020 12:09:37  Information  Application started. Press Ctrl+C to shut down.  
+21/12/2020 12:09:37  Information  Hosting environment: Development  
+21/12/2020 12:09:37  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+21/12/2020 12:17:43  Information  Application started. Press Ctrl+C to shut down.  
+21/12/2020 12:17:43  Information  Hosting environment: Development  
+21/12/2020 12:17:43  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+21/12/2020 12:18:20  Information  Application started. Press Ctrl+C to shut down.  
+21/12/2020 12:18:20  Information  Hosting environment: Development  
+21/12/2020 12:18:20  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+21/12/2020 12:19:14  Error  Failed executing DbCommand (77ms) [Parameters=[@p6='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Date), @p3='?' (Size = 50), @p4='?' (DbType = Int32), @p5='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [CarData] SET [BranchID] = @p0, [CarTypeID] = @p1, [CreateAt] = @p2, [Gear] = @p3, [Kilometer] = @p4, [Notes] = @p5
+WHERE [CarDataID] = @p6;
+SELECT @@ROWCOUNT;  
+21/12/2020 12:19:14  Error  An exception occurred in the database while saving changes for context type 'CarRental.CarRentalContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_CarData_CarType". The conflict occurred in database "CarRental", table "dbo.CarType", column 'CarTypeID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:e20a65b4-cda7-4639-9b82-c2a4e08be191
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)  An error occurred while updating the entries. See the inner exception for details.
+21/12/2020 12:20:19  Error  Failed executing DbCommand (3ms) [Parameters=[@p6='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Date), @p3='?' (Size = 50), @p4='?' (DbType = Int32), @p5='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [CarData] SET [BranchID] = @p0, [CarTypeID] = @p1, [CreateAt] = @p2, [Gear] = @p3, [Kilometer] = @p4, [Notes] = @p5
+WHERE [CarDataID] = @p6;
+SELECT @@ROWCOUNT;  
+21/12/2020 12:20:19  Error  An exception occurred in the database while saving changes for context type 'CarRental.CarRentalContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_CarData_CarType". The conflict occurred in database "CarRental", table "dbo.CarType", column 'CarTypeID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:e20a65b4-cda7-4639-9b82-c2a4e08be191
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)  An error occurred while updating the entries. See the inner exception for details.
+21/12/2020 12:20:37  Information  Application started. Press Ctrl+C to shut down.  
+21/12/2020 12:20:37  Information  Hosting environment: Development  
+21/12/2020 12:20:37  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+21/12/2020 12:31:00  Information  Application started. Press Ctrl+C to shut down.  
+21/12/2020 12:31:00  Information  Hosting environment: Development  
+21/12/2020 12:31:00  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+21/12/2020 14:20:08  Information  Application started. Press Ctrl+C to shut down.  
+21/12/2020 14:20:08  Information  Hosting environment: Development  
+21/12/2020 14:20:08  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+21/12/2020 14:58:47  Information  Application started. Press Ctrl+C to shut down.  
+21/12/2020 14:58:47  Information  Hosting environment: Development  
+21/12/2020 14:58:47  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+21/12/2020 14:59:54  Information  Application started. Press Ctrl+C to shut down.  
+21/12/2020 14:59:54  Information  Hosting environment: Development  
+21/12/2020 14:59:54  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+21/12/2020 15:03:09  Information  Application started. Press Ctrl+C to shut down.  
+21/12/2020 15:03:09  Information  Hosting environment: Development  
+21/12/2020 15:03:09  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+21/12/2020 15:04:57  Information  Application started. Press Ctrl+C to shut down.  
+21/12/2020 15:04:57  Information  Hosting environment: Development  
+21/12/2020 15:04:57  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+21/12/2020 17:05:58  Information  Application started. Press Ctrl+C to shut down.  
+21/12/2020 17:05:58  Information  Hosting environment: Development  
+21/12/2020 17:05:58  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+21/12/2020 19:18:15  Information  Application started. Press Ctrl+C to shut down.  
+21/12/2020 19:18:16  Information  Hosting environment: Development  
+21/12/2020 19:18:16  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+21/12/2020 19:19:51  Error  Failed executing DbCommand (212ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Date), @p3='?' (Size = 50), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CarData] ([BranchID], [CarTypeID], [CreateAt], [Gear], [Image], [Kilometer], [Notes])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [CarDataID]
+FROM [CarData]
+WHERE @@ROWCOUNT = 1 AND [CarDataID] = scope_identity();  
+21/12/2020 19:21:00  Information  Application started. Press Ctrl+C to shut down.  
+21/12/2020 19:21:00  Information  Hosting environment: Development  
+21/12/2020 19:21:00  Information  Content root path: C:\Projects John Bryce\04 - RentalCars\app\Server\04 - Restful API  
+21/12/2020 19:21:06  Error  Failed executing DbCommand (18ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Date), @p3='?' (Size = 50), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CarData] ([BranchID], [CarTypeID], [CreateAt], [Gear], [Image], [Kilometer], [Notes])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [CarDataID]
+FROM [CarData]
+WHERE @@ROWCOUNT = 1 AND [CarDataID] = scope_identity();  
+21/12/2020 19:21:06  Error  An exception occurred in the database while saving changes for context type 'CarRental.CarRentalContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CarData_CarType". The conflict occurred in database "CarRental", table "dbo.CarType", column 'CarTypeID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:42eae391-391f-4f3e-a3d6-efe6cd30c6ac
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)  An error occurred while updating the entries. See the inner exception for details.
+21/12/2020 19:21:06  Error  An unhandled exception has occurred while executing the request.  A possible object cycle was detected which is not supported. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32.

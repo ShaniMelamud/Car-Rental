@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 
+#nullable disable
+
 namespace CarRental
 {
     public partial class Branch
@@ -17,9 +19,8 @@ namespace CarRental
         public string City { get; set; }
         public string Longitude { get; set; }
         public string Latitude { get; set; }
-        public string Phone2 { get; set; }
+        public string Phone { get; set; }
         public string Email { get; set; }
-        public string ActivityTime { get; set; }
 
         public virtual ICollection<Rental> RentalBranchEnds { get; set; }
         public virtual ICollection<Rental> RentalBranchStarts { get; set; }

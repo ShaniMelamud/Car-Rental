@@ -1,0 +1,15 @@
+input,button{
+    width: 250px;
+    font-size: x-large;
+    border-radius: 20px;
+}
+img{
+    width: 120px;
+}
+input[type='file']{
+    display: none;
+}
+.imageButton{
+    background-color: white;
+    text-align: left;
+}

@@ -1,0 +1,75 @@
+<button routerLink="add-user">Add New User</button><br><br>
+<div>
+    <input name="changeStr" [(ngModel)]="changeStr" (ngModelChange)="search()" placeholder="חיפוש..."
+        type="text" />
+    <table>
+        <tr>
+            <th>id</th>
+            <th>firstName</th>
+            <th>lastName</th>
+            <th>gender</th>
+            <th>idcard</th>
+            <th>licenseNumber</th>
+            <th>licenseType</th>
+            <th>phone</th>
+            <th>email</th>
+            <th>registerDate</th>
+            <th>role</th>
+            <th>userName</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        <tr *ngFor="let u of usersToShow">
+            <td>{{u.id}}</td>
+            <td>{{u.firstName}}</td>
+            <td>{{u.lastName}}</td>
+            <td>{{u.gender}}</td>
+            <td>{{u.idCard}}</td>
+            <td>{{u.licenseNumber}}</td>
+            <td>{{u.licenseType}}</td>
+            <td>{{u.phone}}</td>
+            <td>{{u.email}}</td>
+            <td>{{u.registerDate}}</td>
+            <td>{{u.role}}</td>
+            <td>{{u.userName}}</td>
+            <td><button class="btn btn-outline-primary mb-2 mr-2" (click)='getSingleUserByID(u.id)'
+                    (click)="openLg(content)">Edit</button></td>
+            <td><button class="btn btn-outline-primary mb-2 mr-2" (click)="deleteUser(u.id)">delete</button></td>
+        </tr>
+    </table>
+</div>
+
+<ng-template #content let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Edit User</h4>
+        <div class="modal-body">
+            <label>First Name</label><br><br>
+            <input type="text" name='firstName' [(ngModel)]="user.firstName" required><br><br>
+            <label>Last Name</label><br><br>
+            <input type="text" name='lastName' [(ngModel)]="user.lastName" required><br><br>
+            <label>gender</label><br><br>
+            <input type="text" name='gender' [(ngModel)]="user.gender" required><br><br>
+            <label>idcard</label><br><br>
+            <input type="text" name='idCard' [(ngModel)]="user.idCard" required><br><br>
+            <label>email</label><br><br>
+            <input type="email" name='email' [(ngModel)]="user.email" required><br><br>
+            <label>phone</label><br><br>
+            <input type="tel" name='phone' [(ngModel)]="user.phone" required><br><br>
+            <label>licenseNumber</label><br><br>
+            <input type="text" name='licenseNumber' [(ngModel)]="user.licenseNumber" required><br><br>
+            <label>licenseType</label><br><br>
+            <input type="text" name='licenseType' [(ngModel)]="user.licenseType" required><br><br>
+            <label>Role</label><br><br>
+            <input type="text" name='role' [(ngModel)]="user.role" required><br><br>
+            <label>userName</label><br><br>
+            <input type="text" name='userName' [(ngModel)]="user.userName" required><br><br>
+            <button type="button" class="btn btn-light"
+                (click)="updateUser()">Save</button><span>&nbsp;&nbsp;&nbsp;</span>
+            <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+        </div>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+</ng-template>
+

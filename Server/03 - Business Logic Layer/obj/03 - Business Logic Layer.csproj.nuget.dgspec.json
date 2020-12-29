@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects John Bryce\\04 - RentalCars\\Server\\RentalCars\\CarRental\\03 - Business Logic Layer\\03 - Business Logic Layer.csproj": {}
+    "C:\\Projects John Bryce\\04 - RentalCars\\app\\Server\\03 - Business Logic Layer\\03 - Business Logic Layer.csproj": {}
   },
   "projects": {
-    "C:\\Projects John Bryce\\04 - RentalCars\\Server\\RentalCars\\CarRental\\01 - Data Access Layer\\01 - Data Access Layer.csproj": {
+    "C:\\Projects John Bryce\\04 - RentalCars\\app\\Server\\01 - Data Access Layer\\01 - Data Access Layer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects John Bryce\\04 - RentalCars\\Server\\RentalCars\\CarRental\\01 - Data Access Layer\\01 - Data Access Layer.csproj",
+        "projectUniqueName": "C:\\Projects John Bryce\\04 - RentalCars\\app\\Server\\01 - Data Access Layer\\01 - Data Access Layer.csproj",
         "projectName": "01 - Data Access Layer",
-        "projectPath": "C:\\Projects John Bryce\\04 - RentalCars\\Server\\RentalCars\\CarRental\\01 - Data Access Layer\\01 - Data Access Layer.csproj",
+        "projectPath": "C:\\Projects John Bryce\\04 - RentalCars\\app\\Server\\01 - Data Access Layer\\01 - Data Access Layer.csproj",
         "packagesPath": "C:\\Users\\97250\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects John Bryce\\04 - RentalCars\\Server\\RentalCars\\CarRental\\01 - Data Access Layer\\obj\\",
+        "outputPath": "C:\\Projects John Bryce\\04 - RentalCars\\app\\Server\\01 - Data Access Layer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\97250\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,15 +44,23 @@
               "target": "Package",
               "version": "[1.0.0, )"
             },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.9, )"
+              "version": "[5.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.9, )"
+              "version": "[5.0.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             }
           },
           "imports": [
@@ -74,14 +82,14 @@
         }
       }
     },
-    "C:\\Projects John Bryce\\04 - RentalCars\\Server\\RentalCars\\CarRental\\02 - Business Model Layer\\02 - Business Model Layer.csproj": {
+    "C:\\Projects John Bryce\\04 - RentalCars\\app\\Server\\02 - Business Model Layer\\02 - Business Model Layer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects John Bryce\\04 - RentalCars\\Server\\RentalCars\\CarRental\\02 - Business Model Layer\\02 - Business Model Layer.csproj",
+        "projectUniqueName": "C:\\Projects John Bryce\\04 - RentalCars\\app\\Server\\02 - Business Model Layer\\02 - Business Model Layer.csproj",
         "projectName": "02 - Business Model Layer",
-        "projectPath": "C:\\Projects John Bryce\\04 - RentalCars\\Server\\RentalCars\\CarRental\\02 - Business Model Layer\\02 - Business Model Layer.csproj",
+        "projectPath": "C:\\Projects John Bryce\\04 - RentalCars\\app\\Server\\02 - Business Model Layer\\02 - Business Model Layer.csproj",
         "packagesPath": "C:\\Users\\97250\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects John Bryce\\04 - RentalCars\\Server\\RentalCars\\CarRental\\02 - Business Model Layer\\obj\\",
+        "outputPath": "C:\\Projects John Bryce\\04 - RentalCars\\app\\Server\\02 - Business Model Layer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\97250\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -97,8 +105,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Projects John Bryce\\04 - RentalCars\\Server\\RentalCars\\CarRental\\01 - Data Access Layer\\01 - Data Access Layer.csproj": {
-                "projectPath": "C:\\Projects John Bryce\\04 - RentalCars\\Server\\RentalCars\\CarRental\\01 - Data Access Layer\\01 - Data Access Layer.csproj"
+              "C:\\Projects John Bryce\\04 - RentalCars\\app\\Server\\01 - Data Access Layer\\01 - Data Access Layer.csproj": {
+                "projectPath": "C:\\Projects John Bryce\\04 - RentalCars\\app\\Server\\01 - Data Access Layer\\01 - Data Access Layer.csproj"
               }
             }
           }
@@ -111,6 +119,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -130,14 +148,14 @@
         }
       }
     },
-    "C:\\Projects John Bryce\\04 - RentalCars\\Server\\RentalCars\\CarRental\\03 - Business Logic Layer\\03 - Business Logic Layer.csproj": {
+    "C:\\Projects John Bryce\\04 - RentalCars\\app\\Server\\03 - Business Logic Layer\\03 - Business Logic Layer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects John Bryce\\04 - RentalCars\\Server\\RentalCars\\CarRental\\03 - Business Logic Layer\\03 - Business Logic Layer.csproj",
+        "projectUniqueName": "C:\\Projects John Bryce\\04 - RentalCars\\app\\Server\\03 - Business Logic Layer\\03 - Business Logic Layer.csproj",
         "projectName": "03 - Business Logic Layer",
-        "projectPath": "C:\\Projects John Bryce\\04 - RentalCars\\Server\\RentalCars\\CarRental\\03 - Business Logic Layer\\03 - Business Logic Layer.csproj",
+        "projectPath": "C:\\Projects John Bryce\\04 - RentalCars\\app\\Server\\03 - Business Logic Layer\\03 - Business Logic Layer.csproj",
         "packagesPath": "C:\\Users\\97250\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects John Bryce\\04 - RentalCars\\Server\\RentalCars\\CarRental\\03 - Business Logic Layer\\obj\\",
+        "outputPath": "C:\\Projects John Bryce\\04 - RentalCars\\app\\Server\\03 - Business Logic Layer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\97250\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -153,8 +171,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Projects John Bryce\\04 - RentalCars\\Server\\RentalCars\\CarRental\\02 - Business Model Layer\\02 - Business Model Layer.csproj": {
-                "projectPath": "C:\\Projects John Bryce\\04 - RentalCars\\Server\\RentalCars\\CarRental\\02 - Business Model Layer\\02 - Business Model Layer.csproj"
+              "C:\\Projects John Bryce\\04 - RentalCars\\app\\Server\\02 - Business Model Layer\\02 - Business Model Layer.csproj": {
+                "projectPath": "C:\\Projects John Bryce\\04 - RentalCars\\app\\Server\\02 - Business Model Layer\\02 - Business Model Layer.csproj"
               }
             }
           }
@@ -167,6 +185,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

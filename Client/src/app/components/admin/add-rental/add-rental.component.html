@@ -1,0 +1,15 @@
+<p>Add Rental</p><br>
+<form ngNativeValidate (submit)='AddRental()'>
+
+    <input type='text' name='branchEndId' [(ngModel)]='newRental.branchEndId' placeholder="branchEndId..."><br><br>
+    <input type='text' name='branchStartId' [(ngModel)]='newRental.branchStartId' placeholder="branchStartId..."><br><br>
+    <input type='text' name='carDataId' [(ngModel)]='newRental.carDataId' placeholder="carDataId..."><br><br>
+    <input type='text' name='userId' [(ngModel)]='newRental.userId' placeholder="userId..."><br><br>
+    <input type='date' name='pickUpTime' [(ngModel)]='newRental.pickUpTime' placeholder="pickUpTime..."><br><br>
+    <input type='date' name='returnTime' [(ngModel)]='newRental.returnTime' placeholder="returnTime..."><br><br>
+
+
+    <button type="submit">Add</button>
+    <br><br>
+
+</form>

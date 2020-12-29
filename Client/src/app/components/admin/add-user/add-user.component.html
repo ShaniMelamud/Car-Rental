@@ -1,0 +1,19 @@
+<p>Add User</p><br>
+<form ngNativeValidate (submit)='AddUser()'>
+
+    <input type='text' name='firstName' [(ngModel)]='newUser.firstName' placeholder="firstName"><br><br>
+    <input type='text' name='lastName' [(ngModel)]='newUser.lastName' placeholder="lastName"><br><br>
+    <input type='text' name='gender' [(ngModel)]='newUser.gender' placeholder="gender"><br><br>
+    <input type='text' name='idCard' [(ngModel)]='newUser.idCard' placeholder="idCard"><br><br>
+    <input type='text' name='licenseNumber' [(ngModel)]='newUser.licenseNumber' placeholder="licenseNumber"><br><br>
+    <input type='text' name='licenseType' [(ngModel)]='newUser.licenseType' placeholder="licenseType"><br><br>
+    <input type='text' name='phone' [(ngModel)]='newUser.phone' placeholder="phone"><br><br>
+    <input type='email' name='email' [(ngModel)]='newUser.email' placeholder="email"><br><br>
+    <input type='text' name='role' [(ngModel)]='newUser.role' placeholder="role"><br><br>
+    <input type='text' name='userName' [(ngModel)]='newUser.userName' placeholder="userName"><br><br>
+    <input type='text' name='password' [(ngModel)]='newUser.password' placeholder="password"><br><br>
+
+    <button type="submit">Add</button>
+    <br><br>
+
+</form>

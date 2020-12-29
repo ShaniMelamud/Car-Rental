@@ -1,1 +1,25 @@
-<p>sign-up works!</p>
+<h2>Register</h2>
+<form ngNativeValidate (submit)="register()">
+    <div class="leftSideForm">
+        <input type="text" placeholder="First Name..." name="firstName" [(ngModel)]="user.firstName" required><br>
+        <input type="text" placeholder="Last Name..." name="lastName" [(ngModel)]="user.lastName" required><br>
+        <input type="text" placeholder="ID Card..." name="idCard" [(ngModel)]="user.idCard" required><br>
+        <input type="text" placeholder="License Number..." name="licenseNumber" [(ngModel)]="user.licenseNumber"
+            required><br>
+        <input type="text" placeholder="License Type..." name="licenseType" [(ngModel)]="user.licenseType" required><br>
+        <input type="date" placeholder="Birth Date..." name="birthDate" [(ngModel)]="user.birthDate" required><br>
+    </div>
+    <div class="rightSideForm">
+        <input type="email" placeholder="Email..." name="email" [(ngModel)]="user.email" required><br>
+        <input type="tel" placeholder="Phone..." name="phone" [(ngModel)]="user.phone" required><br>
+        <input type="text" placeholder="User Name..." name="userName" [(ngModel)]="user.userName" required><br>
+        <input type="password" placeholder="Password..." name="password" [(ngModel)]="user.password" required><br>
+        <label>Gender</label><br>
+        <div name="gender" [(ngModel)]="user.gender" *ngFor="let box_opt of box_options; let i=index">
+            <input name="option-{{i}}" type="radio" [value]="box_opt.value" [(ngModel)]="user.gender">
+            {{box_opt.name}}
+            <br>
+        </div>
+    </div>
+    <button type="submit">Register</button>
+</form>

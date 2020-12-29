@@ -1,0 +1,13 @@
+
+<div *ngIf="user?.role == 'Admin'">
+<button routerLink="manage-users">Manage Users</button><span> | </span>
+<button routerLink="manage-cars">Manage Cars</button><span> | </span>
+<button routerLink="manage-rentals">Manage Rentals</button><span> | </span>
+<button routerLink="manage-branches">Manage Branches</button><span> | </span>
+<hr>
+</div>
+<div *ngIf="user?.role == 'Employee' || user?.role =='Admin'">
+    <button routerLink="employee-dashboard">Employee Dashboard</button><br><br>
+    
+</div>
+<router-outlet></router-outlet>

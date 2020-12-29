@@ -1,0 +1,74 @@
+<button routerLink="add-car-type">Add New Car Type</button><br><br>
+<button routerLink="add-car-data">Add New Car Data</button><br><br>
+<div>
+    <input name="changeStr" [(ngModel)]="changeStr" (ngModelChange)="searchCars()" placeholder="חיפוש..."
+        type="text" />
+    <table>
+        <tr>
+            <th>car type id</th>
+            <th>manufacturer</th>
+            <th>model</th>
+            <th>pricePerDay</th>
+            <th>car data id</th>
+            <th>kilometer</th>
+            <th>create at</th>
+            <th>gear</th>
+            <th>notes</th>
+            <th>branch id</th>
+            <th>Image</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        <tr *ngFor="let c of carsToShow">
+            <td>{{c.carType.id}}</td>
+            <td>{{c.carType.manufacturer}}</td>
+            <td>{{c.carType.model}}</td>
+            <td>{{c.carType.pricePerDay}}</td>
+            <td>{{c.carData.id}}</td>
+            <td>{{c.carData.kilometer}}</td>
+            <td>{{c.carData.createAt}}</td>
+            <td>{{c.carData.gear}}</td>
+            <td>{{c.carData.notes}}</td>
+            <td>{{c.carData.branchId}}</td>
+            <td><img [src]='c.carType.imageFileName'></td>
+            <td><button class="btn btn-outline-primary mb-2 mr-2"
+                    (click)='getSingleCarTypeAndCarDataByID(c.carType.id, c.carData.id)'
+                    (click)="openLg(content)">Edit</button></td>
+            <td><button class="btn btn-outline-primary mb-2 mr-2" (click)="DeleteCarData(c.carData.id)">delete</button>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+<ng-template #content let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Edit car</h4>
+        <div class="modal-body">
+            <label>Manufacturer</label><br><br>
+            <input type="text" name='manufacturer' [(ngModel)]="carType.manufacturer" required><br><br>
+            <label>Model</label><br><br>
+            <input type="text" name='model' [(ngModel)]="carType.model" required><br><br>
+            <label>Price per day</label><br><br>
+            <input type="text" name='pricePerDay' [(ngModel)]="carType.pricePerDay" required><br><br>
+            <label>createAt</label><br><br>
+            <input type="date" name='createAt' [(ngModel)]="carData.createAt" required><br><br>
+            <label>gear</label><br><br>
+            <input type="text" name='gear' [(ngModel)]="carData.gear" required><br><br>
+            <label>kilometer</label><br><br>
+            <input type="text" name='kilometer' [(ngModel)]="carData.kilometer" required><br><br>
+            <label>notes</label><br><br>
+            <input type="text" name='notes' [(ngModel)]="carData.notes" required><br><br>
+            <label>branchId</label><br><br>
+            <input type="text" name='branchId' [(ngModel)]="carData.branchId" required><br><br>
+
+            <button type="button" class="btn btn-light" (click)="UpdateCarType()"
+                (click)="UpdateCarData()">Save</button><span>&nbsp;&nbsp;&nbsp;</span>
+            <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+
+        </div>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+</ng-template>

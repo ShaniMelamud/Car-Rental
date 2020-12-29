@@ -1,0 +1,16 @@
+<div *ngIf="rentals">
+    <table>
+        <tr>
+            <th>id</th>
+            <th>car data id</th>
+            <th>Pick Up Time</th>
+            <th>Return Time</th>
+        </tr>
+        <tr *ngFor="let r of rentals">
+            <td>{{r.id}}</td>
+            <td>{{r.carDataId}}</td>
+            <td>{{r.pickUpTime| date}}</td>
+            <td>{{r.returnTime| date}}</td>
+        </tr>
+    </table>
+</div>

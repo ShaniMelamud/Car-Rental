@@ -1,16 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 
 namespace CarRental
 {
@@ -27,8 +20,20 @@ namespace CarRental
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors(setup => setup.AddPolicy("EntireWorld", policy => policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()));
+            services.AddCors(setup => setup.AddPolicy("LocalHostDevelopment", policy => policy.WithOrigins("http://localhost:4200", "http://localhost:3000", "http://localhost:5000").AllowAnyMethod().AllowAnyHeader()));
             services.AddDbContext<CarRentalContext>(options => options.UseSqlServer(Configuration.GetConnectionString("CarRental")));
+            services.AddTransient<CarsTypeLogic>();
+            services.AddTransient<CarDataLogic>();
+            services.AddTransient<RentalsLogic>();
+            services.AddTransient<BranchesLogic>();
+            services.AddTransient<UsersLogic>();
             services.AddTransient<CarsLogic>();
+
+            JwtHelper jwtHelper = new JwtHelper(Configuration.GetValue<string>("JWT:Key"));
+            services.AddSingleton(jwtHelper);
+
+            services.AddAuthentication(options => jwtHelper.SetAuthenticationOptions(options))
+                .AddJwtBearer(options => jwtHelper.SetBearerOptions(options));
             services.AddControllers();
         }
 
@@ -44,14 +49,22 @@ namespace CarRental
 
             app.UseRouting();
 
-            app.UseAuthorization();
 
-            app.UseCors();
+
+            app.UseCors("EntireWorld");
+
+            app.UseCors("LocalHostDevelopment");
+
+
+            app.UseAuthentication();
+
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+            app.UseStaticFiles();
         }
     }
 }

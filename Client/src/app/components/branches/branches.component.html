@@ -1,0 +1,75 @@
+<div>
+    <input name="changeStr" [(ngModel)]="changeStr" (ngModelChange)="search()" placeholder="חיפוש..." type="text" />
+    <table>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>country</th>
+            <th>city</th>
+            <th>email</th>
+            <th>phone</th>
+            <th>latitude</th>
+            <th>longitude</th>
+
+        </tr>
+        <tr *ngFor="let b of branchesToShow">
+            <td>{{b.id}}</td>
+            <td>{{b.name}}</td>
+            <td>{{b.country}}</td>
+            <td>{{b.city}}</td>
+            <td>{{b.email}}</td>
+            <td>{{b.phone}}</td>
+            <td>{{b.latitude}}</td>
+            <td>{{b.longitude}}</td>
+
+        </tr>
+    </table>
+</div>
+
+<!-- 
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+
+    <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> No. </th>
+        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="country">
+        <th mat-header-cell *matHeaderCellDef> Country </th>
+        <td mat-cell *matCellDef="let element"> {{element.country}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="city">
+        <th mat-header-cell *matHeaderCellDef> City </th>
+        <td mat-cell *matCellDef="let element"> {{element.city}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="email">
+        <th mat-header-cell *matHeaderCellDef> Email </th>
+        <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="phone">
+        <th mat-header-cell *matHeaderCellDef> Phone </th>
+        <td mat-cell *matCellDef="let element"> {{element.phone}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="latitude">
+        <th mat-header-cell *matHeaderCellDef> Latitude </th>
+        <td mat-cell *matCellDef="let element"> {{element.latitude} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="longitude">
+        <th mat-header-cell *matHeaderCellDef> Longitude </th>
+        <td mat-cell *matCellDef="let element"> {{element.longitude}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table> -->

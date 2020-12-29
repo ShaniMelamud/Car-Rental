@@ -1,0 +1,31 @@
+input, button{
+    width: 200px;
+    height: 20px;
+    font-size: small;
+    border-radius: 20px;
+}
+button{
+    position: relative;
+    bottom: 130px;
+    height: 30px;
+    background-color: darkkhaki;
+}
+input[type=radio]{
+    width: 12px;
+    font-size: large;
+}
+label{
+    font-size: small;
+}
+
+.leftSideForm{
+    position: relative;
+    margin-right: 400px;
+    top: 23px;
+    
+}
+.rightSideForm{
+    position: relative;
+    margin-left: 400px;
+    bottom: 130px;
+}

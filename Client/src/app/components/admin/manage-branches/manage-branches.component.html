@@ -1,0 +1,61 @@
+<button routerLink="add-branch">Add New Branch</button><br><br>
+<div>
+    <input name="changeStr" [(ngModel)]="changeStr" (ngModelChange)="search()" placeholder="חיפוש..."
+        type="text" />
+    <table>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>country</th>
+            <th>city</th>
+            <th>email</th>
+            <th>phone</th>
+            <th>latitude</th>
+            <th>longitude</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        <tr *ngFor="let b of branchesToShow">
+            <td>{{b.id}}</td>
+            <td>{{b.name}}</td>
+            <td>{{b.country}}</td>
+            <td>{{b.city}}</td>
+            <td>{{b.email}}</td>
+            <td>{{b.phone}}</td>
+            <td>{{b.latitude}}</td>
+            <td>{{b.longitude}}</td>
+            <td><button class="btn btn-outline-primary mb-2 mr-2" (click)='getSingleBranchByID(b.id)'
+                    (click)="openLg(content)">Edit</button></td>
+            <td><button class="btn btn-outline-primary mb-2 mr-2" (click)="DeleteBranch(b.id)">delete</button></td>
+        </tr>
+    </table>
+</div>
+
+<ng-template #content let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Edit branch</h4>
+        <div class="modal-body">
+            <label>Name</label><br><br>
+            <input type="text" name='name' [(ngModel)]="branch.name" required><br><br>
+            <label>Country</label><br><br>
+            <input type="text" name='country' [(ngModel)]="branch.country" required><br><br>
+            <label>City</label><br><br>
+            <input type="text" name='city' [(ngModel)]="branch.city" required><br><br>
+            <label>email</label><br><br>
+            <input type="email" name='email' [(ngModel)]="branch.email" required><br><br>
+            <label>phone</label><br><br>
+            <input type="tel" name='phone' [(ngModel)]="branch.phone" required><br><br>
+            <label>latitude</label><br><br>
+            <input type="text" name='latitude' [(ngModel)]="branch.latitude" required><br><br>
+            <label>longitude</label><br><br>
+            <input type="text" name='longitude' [(ngModel)]="branch.longitude" required><br><br>
+            <button type="button" class="btn btn-light"
+                (click)="UpdateBranch()">Save</button><span>&nbsp;&nbsp;&nbsp;</span>
+            <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+        </div>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+</ng-template>
+

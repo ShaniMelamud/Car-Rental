@@ -1,0 +1,14 @@
+<p>Add Car Data</p><br>
+<form ngNativeValidate (submit)='AddCarData()'>
+
+    <input type='text' name='carTypeId' [(ngModel)]='newCarData.carTypeId' placeholder="Car Type"><br><br>
+    <input type='text' name='createAt' [(ngModel)]='newCarData.createAt' placeholder="Year of creation"><br><br>
+    <input type='text' name='gear' [(ngModel)]='newCarData.gear' placeholder="Gear..."><br><br>
+    <input type='text' name='kilometer' [(ngModel)]='newCarData.kilometer' placeholder="Kilometer..."><br><br>
+    <input type='text' name='branchId' [(ngModel)]='newCarData.branchId' placeholder="Branch..."><br><br>
+
+
+<button type="submit">Add</button>
+<br><br>
+
+</form>

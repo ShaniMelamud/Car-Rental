@@ -1,0 +1,13 @@
+h1{
+    position: relative;
+    font-size: xx-large;
+    bottom: 30px;
+}
+div{
+    height: 100%;
+}
+app-logo{
+    position: relative;
+    right: 110px;
+    top: 10px;
+}

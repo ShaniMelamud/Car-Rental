@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CarRental
+﻿namespace CarRental
 {
     public class BranchModel
     {
@@ -14,7 +10,6 @@ namespace CarRental
         public string Latitude { get; set; }
         public string Phone { get; set; }
         public string Email { get; set; }
-        public string ActivityTime { get; set; }
         public BranchModel(){}
         public BranchModel(Branch branch)
         {
@@ -24,9 +19,9 @@ namespace CarRental
             City = branch.City;
             Longitude = branch.Longitude;
             Latitude = branch.Latitude;
-            Phone = branch.Phone2;
+            Phone = branch.Phone;
             Email = branch.Email;
-            ActivityTime = branch.ActivityTime;
+            
         }
         public Branch ConvertToBranch()
         {
@@ -38,9 +33,8 @@ namespace CarRental
                 City = City,
                 Longitude = Longitude,
                 Latitude = Latitude,
-                Phone2 = Phone,
-                Email = Email,
-                ActivityTime = ActivityTime
+                Phone = Phone,
+                Email = Email
             };
             return branch;
         }

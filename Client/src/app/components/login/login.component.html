@@ -1,1 +1,13 @@
-<p>login works!</p>
+<h2>Login</h2>
+
+<form ngNativeValidate (submit)="login()">
+
+<input autocomplete="off" type="text" placeholder="Username..." name="username" [(ngModel)]="credentials.username" required>
+<br><br>
+
+<input autocomplete="off" type="password" placeholder="Password..." name="password" [(ngModel)]="credentials.password" required>
+<br><br>
+
+<button type="submit">Login</button>
+
+</form>

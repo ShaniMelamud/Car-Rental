@@ -1,0 +1,68 @@
+table{
+    margin: auto;
+   
+}
+.divTable{
+    height: 500px;
+    overflow: auto;
+}
+
+table, th, td{
+    border:  none;
+}
+td:first-child{
+    text-align: left;
+}
+
+td, th{
+    padding: 5px;
+    width: 200px;
+}
+
+tr:nth-of-type(even){
+    background-color: lightgreen;
+}
+
+tr:nth-of-type(odd){
+    background-color: lightsalmon;
+}
+
+tr:first-of-type{
+    background-color: lightseagreen;
+    
+}
+
+div{
+   height: 75%;
+   overflow: hidden;
+   display: inline-block;
+   
+}
+.priceCalculationDiv{
+    position: relative;
+    bottom: 100px;
+}
+.dark-modal .modal-content {
+    background-color: #292b2c;
+    color: white;
+  }
+  .dark-modal .close {
+    color: white;
+  }
+  .light-blue-backdrop {
+    background-color: #5cb3fd;
+  }
+  .example-card {
+    max-width: 200px;
+    margin: 10px;
+    
+  }
+  .div-card{
+      margin: 40px;
+      height: 1000px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }

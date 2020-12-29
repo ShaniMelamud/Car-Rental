@@ -1,0 +1,16 @@
+<p>Add Branch</p><br>
+<form ngNativeValidate (submit)='AddBranch()'>
+
+    <input type='text' name='name' [(ngModel)]='newBranch.name' placeholder="name..."><br><br>
+    <input type='text' name='country' [(ngModel)]='newBranch.country' placeholder="country..."><br><br>
+    <input type='text' name='city' [(ngModel)]='newBranch.city' placeholder="city..."><br><br>
+    <input type='text' name='email' [(ngModel)]='newBranch.email' placeholder="email..."><br><br>
+    <input type='text' name='phone' [(ngModel)]='newBranch.phone' placeholder="phone..."><br><br>
+    <input type='text' name='longitude' [(ngModel)]='newBranch.longitude' placeholder="longitude..."><br><br>
+    <input type='text' name='latitude' [(ngModel)]='newBranch.latitude' placeholder="latitude..."><br><br>
+
+
+    <button type="submit">Add</button>
+    <br><br>
+
+</form>

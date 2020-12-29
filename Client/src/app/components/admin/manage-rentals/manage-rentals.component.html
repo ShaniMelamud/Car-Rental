@@ -1,0 +1,61 @@
+<button routerLink="add-rental">Add New Rental</button><br><br>
+<div>
+    <input name="changeStr" [(ngModel)]="changeStr" (ngModelChange)="searchRentals()" placeholder="חיפוש..." type="text" />
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Car Data ID</th>
+            <th>User Name</th>
+            <th>Pick Up Branch</th>
+            <th>Return Branch</th>
+            <th>Pick Up Date</th>
+            <th>Return Date</th>
+            <th>realEndTime</th>
+            <th>expectedPrice</th>
+            <th>finalPrice</th>
+            <!-- <th>user name</th> -->
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        <tr *ngFor="let r of rentalsToShow">
+            <td>{{r.rentalModel.id}}</td>
+            <td>{{r.carModel.carData.id}}</td>
+            <td>{{r.userModel.userName}}</td>
+            <td>{{r.branchModelPickUp.name}}</td>
+            <td>{{r.branchModelReturn.name}}</td>
+            <td>{{r.rentalModel.pickUpTime}}</td>
+            <td>{{r.rentalModel.returnTime}}</td>
+            <td>{{r.rentalModel.finalReturnTime}}</td>
+            <td>{{r.rentalModel.expectedPrice}}</td>
+            <td>{{r.rentalModel.finalPrice}}</td>
+            <!-- <td>{{r.user.fullName}}</td> -->
+            <td><button class="btn btn-outline-primary mb-2 mr-2" (click)='GetSingleFullRentalById(r.rentalModel.id)'
+                (click)="openLg(content)">Edit</button></td>
+            <td><button class="btn btn-outline-primary mb-2 mr-2" (click)="DeleteRental(r.rentalModel.id)">delete</button></td>
+        </tr>
+    </table>
+</div>
+
+<ng-template #content let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Edit Rental</h4>
+        <div class="modal-body">
+            <label>CarDataId</label><br><br>
+            <input type="text" name='carDataId' [(ngModel)]="fullRental.rentalModel.carDataId" required><br><br>
+            <label>expectedPrice</label><br><br>
+            <input type="text" name='expectedPrice' [(ngModel)]="fullRental.rentalModel.expectedPrice" required><br><br>
+            <label>pickUpTime</label><br><br>
+            <input type="date" name='pickUpTime' [(ngModel)]="fullRental.rentalModel.pickUpTime" required><br><br>
+            <label>returnTime</label><br><br>
+            <input type="date" name='returnTime' [(ngModel)]="fullRental.rentalModel.returnTime" required><br><br>
+            <label>userId</label><br><br>
+            <input type="text" name='userId' [(ngModel)]="fullRental.rentalModel.userId" required><br><br>
+            <button type="button" class="btn btn-light"
+                (click)="UpdateRental()">Save</button><span>&nbsp;&nbsp;&nbsp;</span>
+            <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+        </div>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+</ng-template>

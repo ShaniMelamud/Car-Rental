@@ -1,35 +1,36 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
 using System.Collections.Generic;
-using System.Text;
 
 namespace CarRental
 {
     public class CarTypeModel
     {
-        public int CarTypeId { get; set; }
+        public int ID { get; set; }
         public string Manufacturer { get; set; }
         public string Model { get; set; }
-        public decimal PricePerDay { get; set; }
-        public decimal PricePerDayLate { get; set; }
+        public decimal? PricePerDay { get; set; }
+        public IFormFile Image { get; set; }
+        public string ImageFileName { get; set; }
+
 
         public CarTypeModel() { }
         public CarTypeModel(CarType carType)
         {
-            CarTypeId = carType.CarTypeId;
+            ID = carType.CarTypeId;
             Manufacturer = carType.Manufacturer;
             Model = carType.Model;
             PricePerDay = carType.PricePerDay;
-            PricePerDayLate = carType.PricePerDayLate;
+            ImageFileName = carType.ImageFileName;
         }
         public CarType ConvertToCarType()
         {
             CarType carType = new CarType
             {
-                CarTypeId = CarTypeId,
+                CarTypeId = ID,
                 Manufacturer = Manufacturer,
                 Model = Model,
                 PricePerDay = PricePerDay,
-                PricePerDayLate = PricePerDayLate
+                ImageFileName = ImageFileName
 
             };
             return carType;

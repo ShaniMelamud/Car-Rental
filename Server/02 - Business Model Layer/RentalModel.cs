@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CarRental
 {
@@ -8,14 +6,15 @@ namespace CarRental
     {
         public int ID { get; set; }
         public int CarDataId { get; set; }
-        public int UserId { get; set; }
-        public int BranchStartId { get; set; }
+        public int? UserId { get; set; }
+        public int? BranchStartId { get; set; }
         public int? BranchEndId { get; set; }
-        public DateTime StartTime { get; set; }
-        public DateTime? EndTime { get; set; }
-        public DateTime? RealEndTime { get; set; }
-        public decimal ExpectedPrice { get; set; }
+        public DateTime? PickUpTime { get; set; }
+        public DateTime? ReturnTime { get; set; }
+        public DateTime? FinalReturnTime { get; set; }
+        public decimal? ExpectedPrice { get; set; }
         public decimal? FinalPrice { get; set; }
+       
         public RentalModel(){}
         public RentalModel(Rental rental)
         {
@@ -24,9 +23,9 @@ namespace CarRental
             UserId = rental.UserId;
             BranchStartId = rental.BranchStartId;
             BranchEndId = rental.BranchEndId;
-            StartTime = rental.StartTime;
-            EndTime = rental.EndTime;
-            RealEndTime = rental.RealEndTime;
+            PickUpTime = rental.PickUpTime;
+            ReturnTime = rental.ReturnTime;
+            FinalReturnTime = rental.FinalReturnTime;
             ExpectedPrice = rental.ExpectedPrice;
             FinalPrice = rental.FinalPrice;
         }
@@ -39,9 +38,9 @@ namespace CarRental
                 UserId = UserId,
                 BranchStartId = BranchStartId,
                 BranchEndId = BranchEndId,
-                StartTime = StartTime,
-                EndTime = EndTime,
-                RealEndTime = RealEndTime,
+                PickUpTime = PickUpTime,
+                ReturnTime = ReturnTime,
+                FinalReturnTime = FinalReturnTime,
                 ExpectedPrice = ExpectedPrice,
                 FinalPrice = FinalPrice
             };

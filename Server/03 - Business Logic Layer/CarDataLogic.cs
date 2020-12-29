@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace CarRental
 {
@@ -34,7 +32,6 @@ namespace CarRental
             carData.Kilometer = carDataModel.Kilometer;
             carData.CreateAt = carDataModel.CreateAt;
             carData.Gear = carDataModel.Gear;
-            carData.IsOk = carDataModel.IsOk;
             carData.Notes = carDataModel.Notes;
             carData.Image = carDataModel.Image;
             carData.BranchId = carDataModel.BranchId;
@@ -54,8 +51,6 @@ namespace CarRental
                 carData.CreateAt = carDataModel.CreateAt;
             if (carDataModel.Gear != null)
                 carData.Gear = carDataModel.Gear;
-            if (carDataModel.IsOk != null)
-                carData.IsOk = carDataModel.IsOk;
             if (carDataModel.Notes != null)
                 carData.Notes = carDataModel.Notes;
             if (carDataModel.Image != null)

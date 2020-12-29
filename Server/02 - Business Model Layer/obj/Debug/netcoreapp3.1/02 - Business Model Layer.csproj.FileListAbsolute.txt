@@ -1,0 +1,12 @@
+C:\Projects John Bryce\04 - RentalCars\app\Server\02 - Business Model Layer\bin\Debug\netcoreapp3.1\02 - Business Model Layer.deps.json
+C:\Projects John Bryce\04 - RentalCars\app\Server\02 - Business Model Layer\bin\Debug\netcoreapp3.1\02 - Business Model Layer.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\02 - Business Model Layer\bin\Debug\netcoreapp3.1\02 - Business Model Layer.pdb
+C:\Projects John Bryce\04 - RentalCars\app\Server\02 - Business Model Layer\bin\Debug\netcoreapp3.1\01 - Data Access Layer.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\02 - Business Model Layer\bin\Debug\netcoreapp3.1\01 - Data Access Layer.pdb
+C:\Projects John Bryce\04 - RentalCars\app\Server\02 - Business Model Layer\obj\Debug\netcoreapp3.1\02 - Business Model Layer.csprojAssemblyReference.cache
+C:\Projects John Bryce\04 - RentalCars\app\Server\02 - Business Model Layer\obj\Debug\netcoreapp3.1\02 - Business Model Layer.AssemblyInfoInputs.cache
+C:\Projects John Bryce\04 - RentalCars\app\Server\02 - Business Model Layer\obj\Debug\netcoreapp3.1\02 - Business Model Layer.AssemblyInfo.cs
+C:\Projects John Bryce\04 - RentalCars\app\Server\02 - Business Model Layer\obj\Debug\netcoreapp3.1\02 - Business Model Layer.csproj.CopyComplete
+C:\Projects John Bryce\04 - RentalCars\app\Server\02 - Business Model Layer\obj\Debug\netcoreapp3.1\02 - Business Model Layer.dll
+C:\Projects John Bryce\04 - RentalCars\app\Server\02 - Business Model Layer\obj\Debug\netcoreapp3.1\02 - Business Model Layer.pdb
+C:\Projects John Bryce\04 - RentalCars\app\Server\02 - Business Model Layer\obj\Debug\netcoreapp3.1\02 - Business Model Layer.csproj.CoreCompileInputs.cache
